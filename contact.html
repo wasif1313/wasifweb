@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  background-color:lightblue;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-form p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input, .input-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.input-field textarea {
+  height: 150px;
+  resize: none;
+}
+
+.input-field input:focus, .input-field textarea:focus {
+  border-color: #5c6bc0;
+  outline: none;
+}
+
+.submit-btn button {
+  width: 100%;
+  padding: 12px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn button:hover {
+  background-color: #4f5d94;
+}
+
+.contact-info {
+  width: 45%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color:lightblue;
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form, .contact-info {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+<body>
+  <div class="contact-container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <div class="input-field">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-field">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <div class="submit-btn">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Our Address</h3>
+      <p>college Town Karak</p>
+      <h3>Contact</h3>
+      <p>03331313721</p>
+      <h3>Email</h3>
+      <p>muhammadwasif207@gmail.com</p>
+    </div>
+  </div>
+</body>
+</html>
